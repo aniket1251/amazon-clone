@@ -1,0 +1,101 @@
+[debug] [2022-02-14T22:17:30.031Z] ----------------------------------------------------------------------
+[debug] [2022-02-14T22:17:30.032Z] Command:       C:\Users\ag125\.nvm\versions\node\v16.13.2\bin\node.exe C:\Users\ag125\.nvm\versions\node\v16.13.2\bin\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-02-14T22:17:30.033Z] CLI Version:   10.2.0
+[debug] [2022-02-14T22:17:30.033Z] Platform:      win32
+[debug] [2022-02-14T22:17:30.033Z] Node Version:  v16.13.2
+[debug] [2022-02-14T22:17:30.033Z] Time:          Tue Feb 15 2022 03:47:30 GMT+0530 (India Standard Time)
+[debug] [2022-02-14T22:17:30.034Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-14T22:17:30.079Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-14T22:17:30.079Z] > authorizing via signed-in user (ag125aa@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\development\web development\New web dev\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-02-14T22:17:40.470Z] Using project from CLI flag: clone-24818
+[debug] [2022-02-14T22:17:40.471Z] > refreshing access token with scopes: []
+[debug] [2022-02-14T22:17:40.471Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-14T22:17:40.963Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 14 Feb 2022 22:17:40 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T22:17:40.981Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-24818 [none]
+[debug] [2022-02-14T22:17:41.785Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-24818 200
+[debug] [2022-02-14T22:17:41.785Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-24818 {"projectId":"clone-24818","projectNumber":"216768108608","displayName":"amazon-clone","name":"projects/clone-24818","resources":{"hostingSite":"clone-24818"},"state":"ACTIVE"}
+[info] i  Using project clone-24818 (amazon-clone) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-02-14T22:17:51.232Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-02-14T22:17:51.649Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-02-14T22:17:51.649Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.6","browserURL":"https://www.gstatic.com/firebasejs/9.6.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.6/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.6/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.6/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.6/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.6/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.6/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.6/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.6/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.6/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.6/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.memory.js"}}
+[debug] [2022-02-14T22:18:05.748Z] ----------------------------------------------------------------------
+[debug] [2022-02-14T22:18:05.749Z] Command:       C:\Users\ag125\.nvm\versions\node\v16.13.2\bin\node.exe C:\Users\ag125\.nvm\versions\node\v16.13.2\bin\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-02-14T22:18:05.749Z] CLI Version:   10.2.0
+[debug] [2022-02-14T22:18:05.750Z] Platform:      win32
+[debug] [2022-02-14T22:18:05.750Z] Node Version:  v16.13.2
+[debug] [2022-02-14T22:18:05.750Z] Time:          Tue Feb 15 2022 03:48:05 GMT+0530 (India Standard Time)
+[debug] [2022-02-14T22:18:05.751Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-14T22:18:05.809Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-14T22:18:05.809Z] > authorizing via signed-in user (ag125aa@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\development\web development\New web dev\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-02-14T22:18:46.403Z] ----------------------------------------------------------------------
+[debug] [2022-02-14T22:18:46.404Z] Command:       C:\Users\ag125\.nvm\versions\node\v16.13.2\bin\node.exe C:\Users\ag125\.nvm\versions\node\v16.13.2\bin\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-02-14T22:18:46.404Z] CLI Version:   10.2.0
+[debug] [2022-02-14T22:18:46.405Z] Platform:      win32
+[debug] [2022-02-14T22:18:46.405Z] Node Version:  v16.13.2
+[debug] [2022-02-14T22:18:46.405Z] Time:          Tue Feb 15 2022 03:48:46 GMT+0530 (India Standard Time)
+[debug] [2022-02-14T22:18:46.405Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-14T22:18:46.452Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-14T22:18:46.452Z] > authorizing via signed-in user (ag125aa@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\development\web development\New web dev\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
